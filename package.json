@@ -31,7 +31,6 @@
         "@flexilla/alpine-tabs": "^0.2.0",
         "@flexilla/alpine-tooltip": "^0.0.1",
         "@flexilla/utilities": "^2.2.0",
-        "fuse.js": "^7.1.0",
         "overlayscrollbars": "^2.11.4",
         "shiki": "^3.8.1"
     }
