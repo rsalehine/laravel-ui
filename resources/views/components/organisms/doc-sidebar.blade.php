@@ -53,7 +53,7 @@
     </button>
     <div class="flex h-max pb-5 px-5 lg:pl-0 lg:pr-4">
         <button data-dropdown-trigger data-dropdown-id="dropdown-sidebar"
-            class="btn border w-full border-border gap-3 p-1.5 pr-3 rounded-lg hover:bg-bg-subtle/80 bg-bg">
+            class="btn border w-full border-border-input gap-3 p-1.5 pr-3 rounded-lg hover:bg-bg-subtle/80 bg-bg">
             <div class="text-fg flex items-center w-full justify-between">
                 <span class="p-2 rounded bg-bg-subtle text-lg text-fg mr-3">
                     <span class="flex iconify simple-icons--laravel"></span>

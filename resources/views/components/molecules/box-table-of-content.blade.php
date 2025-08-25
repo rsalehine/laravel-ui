@@ -5,7 +5,6 @@
     $headings = HeadingExtractor::extractFromHtml($contentHtml);
 @endphp
 
-
 <div data-table-of-content
     class="box-tab-content tab-content-ui-bg xl:bg-transparent xl:z-auto tab-content-ui-states tab-content-ui flex overflow-hidden">
     <x-atoms.scrollable-y class="w-full p-4">

@@ -11,7 +11,7 @@
                 <x-dynamic-component :component="$componentPreview" />
             @endif
         </div>
-        <livewire:view-component-code :is-lazy="false" :file-path="$filePath" />
+        <livewire:view-component-code :file-path="$filePath" />
     </div>
 @else
     <x-docs.docs-tab :values="[
