@@ -30,7 +30,7 @@
         "@flexilla/alpine-range-indicator": "^0.0.0",
         "@flexilla/alpine-tabs": "^0.2.0",
         "@flexilla/alpine-tooltip": "^0.0.1",
-        "@flexilla/utilities": "^2.2.0",
+        "@flexilla/utilities": "^2.4.2",
         "overlayscrollbars": "^2.11.4",
         "shiki": "^3.8.1"
     }
