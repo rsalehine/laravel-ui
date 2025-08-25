@@ -23,8 +23,13 @@
     --ring-bg: var(--c-primary);
     --ring-offset-color: var(--c-bg);
 
-
+    --focus-ring: var(--c-primary-200);
 }
+.dark{
+  --c-border-input: var(--c-gray-700);
+  --focus-ring: var(--c-primary-800);
+}
+
 
 
 @theme inline {
@@ -59,10 +64,7 @@
     --color-bg-overlay: var(--c-bg-overlay);
     --color-bg-overlay-gray: var(--c-bg-overlay-gray);    
     
-    /* popover : For Dropdowns & popovers  */
-    --color-bg-popover: var(--c-bg-popover);
-    --color-bg-popover-gray: var(--c-bg-popover-gray);
-
+   
     --color-bg-progressbar: var(--c-bg-progressbar);
 
     --color-border-strong: var(--c-border-strong);
@@ -70,8 +72,7 @@
     --color-border: var(--c-border);
     --color-border-sub: var(--c-border-sub);
     --color-border-card:var(--c-border-card);
-
-    --color-border-input: var(--border-input);
+    --color-border-input: var(--c-border-input);
 
 
 
