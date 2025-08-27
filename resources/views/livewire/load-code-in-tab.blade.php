@@ -11,7 +11,7 @@
                         $id = Str::slug($item['name']);
                         $icon = \App\Helpers\CodeIcon::get($item['lang']);
                     @endphp
-                    <li role="presentation" class="d-flex-items-center pb-2">
+                    <li wire:key="trigger-{{ $id }}" role="presentation" class="d-flex-items-center pb-2">
                         <a data-tabs-trigger data-target="{{ $id }}" href="#{{ $id }}" role="tab"
                             aria-controls="{{ $id }}" aria-label="{{ $item['name'] }}"
                             class="flex h-full items-center rounded-md text-gray-400 fx-active:text-white hover:text-white ease-linear duration-200 focus:outline-none text-nowrap">
@@ -37,7 +37,7 @@
                 @php
                     $id = Str::slug($item['name']);
                 @endphp
-                <section wire:key="$id" data-tab-panel aria-labelledby="{{ $id }}" role="tabpanel"
+                <section wire:key="tab-{{ $id }}" data-tab-panel aria-labelledby="{{ $id }}" role="tabpanel"
                     id="{{ $id }}" tabindex="0" aria-hidden="{{ $loop->first ? 'false' : 'true' }}"
                     data-state="{{ $loop->first ? 'active' : 'inactive' }}"
                     class="hidden fx-active:flex active:outline-gray-800/50 focus:outline-gray-800/50 w-full">
@@ -45,7 +45,7 @@
                         class="relative group overflow-hidden max-h-[35rem] w-full grid border border-border-strong/30 bg-(--astro-code-color-background) inner-radius">
                         <div data-hidden-scrollbar-s data-overlayscrollbars-initialize
                             class="w-full flex h-full overflow-auto">
-                            <livewire:render-block-code :code="$item['code']" :lang="$item['lang']" :lines="$item['lines'] ?? []" />
+                            <livewire:render-block-code wire:key="tab-{{ $id }}" :code="$item['code']" :lang="$item['lang']" :lines="$item['lines'] ?? []" />
                         </div>
                     </div>
                 </section>

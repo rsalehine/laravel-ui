@@ -11,6 +11,7 @@ import PluginOffcanvas from "@flexilla/alpine-offcanvas";
 import PluginPopover from "@flexilla/alpine-popover";
 import PluginTooltip from "@flexilla/alpine-tooltip";
 import { docSearch } from "../data/search-db";
+import PluginPinInput from "@flexilla/alpine-pin-input";
 
 const initGlobalApp = () => {};
 
@@ -28,6 +29,7 @@ Alpine.plugin(PluginAutoResizeArea);
 Alpine.plugin(PluginOffcanvas);
 Alpine.plugin(PluginPopover);
 Alpine.plugin(PluginTooltip);
+Alpine.plugin(PluginPinInput)
 
 document.addEventListener("alpine:init", () => {
     Alpine.store("theme", {

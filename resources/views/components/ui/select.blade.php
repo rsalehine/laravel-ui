@@ -25,7 +25,7 @@
     ];
     $radius_ = $input_radius[$radius] ?? $input_radius['lg'];
 
-    $border_class = $noBorder ? 'border-transparent' : 'border border-border-input shadow-sm bg-bg';
+    $border_class = $noBorder ? 'border-transparent' : 'border border-border-input shadow bg-bg';
     $baseClasses = "ui-form-base ui-form-input ui-form-select {$radius_} {$border_class} text-fg";
     $sizeClasses = $sizes[$size] ?? $sizes['md'];
 

@@ -44,16 +44,6 @@ return [
     --border-strong: var(--color-gray-300); 
     --border-amphasis: var(--color-gray-400); 
     --border-input: var(--color-gray-200);
-
-
-    /* card  */
-    --card: var(--color-white); 
-    --card-gray: var(--color-gray-100); 
-
-
-    /* popover : For Dropdowns & popovers  */
-    --popover: var(--color-white); 
-    --popover-gray: var(--color-gray-100);
 }
 .dark{
     --primary: var(--color-primary-500);

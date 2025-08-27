@@ -13,6 +13,7 @@
 
 @php
     $sizes = [
+        'none' => '',
         'sm' => 'ui-form-input-sm',
         'md' => 'ui-form-input-md',
         'lg' => 'ui-form-input-lg',
@@ -27,7 +28,7 @@
     ];
     $radius_ = $input_radius[$radius] ?? $input_radius['lg'];
 
-    $border_class = $noBorder ? 'border-transparent' : 'border border-border-input shadow-sm bg-bg';
+    $border_class = $noBorder ? 'border-transparent' : 'border border-border-input shadow bg-bg';
     $baseClasses = $unStylled ? '' : "ui-form-base ui-form-input {$radius_} {$border_class} text-fg";
     $sizeClasses = $sizes[$size] ?? $sizes['md'];
 

@@ -164,6 +164,13 @@ return [
                 'seoDescription' => 'Create interactive modal dialogs with Flexiwind\'s modal component.',
             ],
             [
+                'title' => 'Otp /Pin',
+                'path' => '/components/otp',
+                'description' => 'OTP input for user.',
+                'keywords' => 'otp, input, user',
+                'seoDescription' => 'Create OTP input with Flexiwind\'s otp component.',
+            ],
+            [
                 'title' => 'Pagination',
                 'path' => '/components/pagination',
                 'description' => 'Navigation for multiple pages.',
