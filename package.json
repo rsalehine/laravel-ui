@@ -26,6 +26,7 @@
         "@flexilla/alpine-modal": "^0.2.0",
         "@flexilla/alpine-navbar": "^0.1.0",
         "@flexilla/alpine-offcanvas": "^0.1.0",
+        "@flexilla/alpine-pin-input": "^0.2.0",
         "@flexilla/alpine-popover": "^0.2.0",
         "@flexilla/alpine-range-indicator": "^0.0.0",
         "@flexilla/alpine-tabs": "^0.2.0",

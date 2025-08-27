@@ -1,14 +1,14 @@
 @php
     $items = [
         [
-            'text' => 'Html',
-            'description' => 'Free',
+            'text' => 'HTML',
+            'description' => 'Vanilla HTML + JS',
             'path' => '#',
             'icon' => 'simple-icons--html5',
         ],
         [
-            'text' => 'Uno UI(Unify UI)',
-            'description' => 'Free',
+            'text' => 'UnoUI',
+            'description' => 'Flexiwind for UnoCSS blocks and components',
             'path' => '#',
             'icon' => 'simple-icons--unocss',
         ],

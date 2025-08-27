@@ -30,9 +30,5 @@
         </div>
     </div>
 
-    <div role="list" x-dropdown id="dropdown-sidebar"
-        class="z-130 invisible opacity-0 fx-open:visible fx-open:opacity-100 ease-linear duration-200 ui-popper w-[17rem] lg:w-[16rem] bg-bg border border-border ui-card [--card-padding:calc(var(--spacing)*0.5)] [--card-radius:var(--global-main-radius)]">
-        <x-blocks.list-ui-kits />
-    </div>
     <x-blocks.modal-search />
 </x-layouts.base>

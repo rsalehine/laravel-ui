@@ -4,7 +4,7 @@
 - [ ] Base
   - [ ] Annonce
   - [ ] Callout
-  - [ ] Pin Input
+  - [x] Pin Input
 
 
 - [ ] Advanced Component

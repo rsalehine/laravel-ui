@@ -13,6 +13,7 @@
 
 @php
     $sizes = [
+        'none' => '',
         'sm' => 'ui-form-input-sm',
         'md' => 'ui-form-input-md',
         'lg' => 'ui-form-input-lg',
