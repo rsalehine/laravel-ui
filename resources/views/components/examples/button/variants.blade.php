@@ -40,7 +40,7 @@
                         <x-ui.button size="sm" variant="ghost" intent="accent">Click Me</x-ui.button>
                     </div>
                     <div class="flex items-center gap-x-4">
-                        <x-ui.button size="sm" intent="secondary">Click Me</x-ui.button>
+                        <x-ui.button size="sm" intent="success">Click Me</x-ui.button>
                         <x-ui.button size="sm" variant="outline" intent="success">Click Me</x-ui.button>
                         <x-ui.button size="sm" variant="soft" intent="success">Click Me</x-ui.button>
                         <x-ui.button size="sm" variant="ghost" intent="success">Click Me</x-ui.button>

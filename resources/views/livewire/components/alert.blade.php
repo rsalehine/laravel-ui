@@ -23,7 +23,4 @@
     <x-md.h3>Variants</x-md.h3>
     <livewire:component-tab-preview-code component="components.examples.alert.variants" />
 
-    <x-md.h3>Custom</x-md.h3>
-    <livewire:component-tab-preview-code no-in-tabs component="components.examples.alert.custom" />
-
 </x-layouts.doc-page-wrapper>
