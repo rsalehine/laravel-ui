@@ -145,7 +145,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-primary-500);
         --btn-flexi-hover-bg: var(--color-primary-600);
-        --btn-flexi-active-b: var(--color-primary-500);
+        --btn-flexi-active-bg: var(--color-primary-500);
         --btn-flexi-shadow-a: var(--color-primary-700);
         --btn-flexi-shadow-b: var(--color-primary-600);
         --btn-flexi-shadow-c: var(--color-primary-400);
@@ -169,7 +169,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-secondary-500);
         --btn-flexi-hover-bg: var(--color-secondary-600);
-        --btn-flexi-active-b: var(--color-secondary-500);
+        --btn-flexi-active-bg: var(--color-secondary-500);
         --btn-flexi-shadow-a: var(--color-secondary-700);
         --btn-flexi-shadow-b: var(--color-secondary-600);
         --btn-flexi-shadow-c: var(--color-secondary-400);
@@ -193,7 +193,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-accent-500);
         --btn-flexi-hover-bg: var(--color-accent-600);
-        --btn-flexi-active-b: var(--color-accent-500);
+        --btn-flexi-active-bg: var(--color-accent-500);
         --btn-flexi-shadow-a: var(--color-accent-700);
         --btn-flexi-shadow-b: var(--color-accent-600);
         --btn-flexi-shadow-c: var(--color-accent-400);
@@ -217,7 +217,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-success-500);
         --btn-flexi-hover-bg: var(--color-success-600);
-        --btn-flexi-active-b: var(--color-success-500);
+        --btn-flexi-active-bg: var(--color-success-500);
         --btn-flexi-shadow-a: var(--color-success-700);
         --btn-flexi-shadow-b: var(--color-success-600);
         --btn-flexi-shadow-c: var(--color-success-400);
@@ -241,7 +241,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-danger-500);
         --btn-flexi-hover-bg: var(--color-danger-600);
-        --btn-flexi-active-b: var(--color-danger-500);
+        --btn-flexi-active-bg: var(--color-danger-500);
         --btn-flexi-shadow-a: var(--color-danger-700);
         --btn-flexi-shadow-b: var(--color-danger-600);
         --btn-flexi-shadow-c: var(--color-danger-400);
@@ -265,7 +265,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-warning-500);
         --btn-flexi-hover-bg: var(--color-warning-600);
-        --btn-flexi-active-b: var(--color-warning-500);
+        --btn-flexi-active-bg: var(--color-warning-500);
         --btn-flexi-shadow-a: var(--color-warning-700);
         --btn-flexi-shadow-b: var(--color-warning-600);
         --btn-flexi-shadow-c: var(--color-warning-400);
@@ -289,7 +289,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-info-500);
         --btn-flexi-hover-bg: var(--color-info-600);
-        --btn-flexi-active-b: var(--color-info-500);
+        --btn-flexi-active-bg: var(--color-info-500);
         --btn-flexi-shadow-a: var(--color-info-700);
         --btn-flexi-shadow-b: var(--color-info-600);
         --btn-flexi-shadow-c: var(--color-info-400);
@@ -313,7 +313,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-gray-900);
         --btn-flexi-hover-bg: var(--color-gray-800);
-        --btn-flexi-active-b: var(--color-gray-900);
+        --btn-flexi-active-bg: var(--color-gray-900);
         --btn-flexi-shadow-a: var(--color-gray-800);
         --btn-flexi-shadow-b: var(--color-gray-900);
         --btn-flexi-shadow-c: var(--color-gray-800);
@@ -337,7 +337,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-gray-500);
         --btn-flexi-hover-bg: var(--color-gray-600);
-        --btn-flexi-active-b: var(--color-gray-500);
+        --btn-flexi-active-bg: var(--color-gray-500);
         --btn-flexi-shadow-a: var(--color-gray-600);
         --btn-flexi-shadow-b: var(--color-gray-500);
         --btn-flexi-shadow-c: var(--color-gray-600);
@@ -361,7 +361,7 @@ CSS,
     &:is(.dark *) {
         --btn-flexi-bg: var(--color-white);
         --btn-flexi-hover-bg: var(--color-gray-100);
-        --btn-flexi-active-b: var(--color-gray-50);
+        --btn-flexi-active-bg: var(--color-gray-50);
         --btn-flexi-shadow-a: var(--color-gray-100);
         --btn-flexi-shadow-b: var(--color-gray-200);
         --btn-flexi-shadow-c: var(--color-gray-50);
@@ -379,7 +379,7 @@ CSS,
 @utility btn-flexi-primary {
     --btn-flexi-bg: var(--color-primary-500);
     --btn-flexi-hover-bg: var(--color-primary-600);
-    --btn-flexi-active-b: var(--color-primary-500);
+    --btn-flexi-active-bg: var(--color-primary-500);
     --btn-flexi-shadow-a: var(--color-primary-700);
     --btn-flexi-shadow-b: var(--color-primary-600);
     --btn-flexi-shadow-c: var(--color-primary-400);
@@ -392,7 +392,7 @@ CSS,
 @utility btn-flexi-secondary {
     --btn-flexi-bg: var(--color-secondary-500);
     --btn-flexi-hover-bg: var(--color-secondary-600);
-    --btn-flexi-active-b: var(--color-secondary-500);
+    --btn-flexi-active-bg: var(--color-secondary-500);
     --btn-flexi-shadow-a: var(--color-secondary-700);
     --btn-flexi-shadow-b: var(--color-secondary-600);
     --btn-flexi-shadow-c: var(--color-secondary-400);
@@ -404,7 +404,7 @@ CSS,
 @utility btn-flexi-accent {
     --btn-flexi-bg: var(--color-accent-500);
     --btn-flexi-hover-bg: var(--color-accent-600);
-    --btn-flexi-active-b: var(--color-accent-500);
+    --btn-flexi-active-bg: var(--color-accent-500);
     --btn-flexi-shadow-a: var(--color-accent-700);
     --btn-flexi-shadow-b: var(--color-accent-600);
     --btn-flexi-shadow-c: var(--color-accent-400);
@@ -416,7 +416,7 @@ CSS,
 @utility btn-flexi-success {
     --btn-flexi-bg: var(--color-success-500);
     --btn-flexi-hover-bg: var(--color-success-600);
-    --btn-flexi-active-b: var(--color-success-500);
+    --btn-flexi-active-bg: var(--color-success-500);
     --btn-flexi-shadow-a: var(--color-success-700);
     --btn-flexi-shadow-b: var(--color-success-600);
     --btn-flexi-shadow-c: var(--color-success-400);
@@ -428,7 +428,7 @@ CSS,
 @utility btn-flexi-danger {
     --btn-flexi-bg: var(--color-danger-500);
     --btn-flexi-hover-bg: var(--color-danger-600);
-    --btn-flexi-active-b: var(--color-danger-500);
+    --btn-flexi-active-bg: var(--color-danger-500);
     --btn-flexi-shadow-a: var(--color-danger-700);
     --btn-flexi-shadow-b: var(--color-danger-600);
     --btn-flexi-shadow-c: var(--color-danger-400);
@@ -440,7 +440,7 @@ CSS,
 @utility btn-flexi-warning {
     --btn-flexi-bg: var(--color-warning-500);
     --btn-flexi-hover-bg: var(--color-warning-600);
-    --btn-flexi-active-b: var(--color-warning-500);
+    --btn-flexi-active-bg: var(--color-warning-500);
     --btn-flexi-shadow-a: var(--color-warning-700);
     --btn-flexi-shadow-b: var(--color-warning-600);
     --btn-flexi-shadow-c: var(--color-warning-400);
@@ -452,7 +452,7 @@ CSS,
 @utility btn-flexi-info {
     --btn-flexi-bg: var(--color-info-500);
     --btn-flexi-hover-bg: var(--color-info-600);
-    --btn-flexi-active-b: var(--color-info-500);
+    --btn-flexi-active-bg: var(--color-info-500);
     --btn-flexi-shadow-a: var(--color-info-700);
     --btn-flexi-shadow-b: var(--color-info-600);
     --btn-flexi-shadow-c: var(--color-info-400);
@@ -464,7 +464,7 @@ CSS,
 @utility btn-flexi-white {
     --btn-flexi-bg: var(--color-gray-900);
     --btn-flexi-hover-bg: var(--color-gray-800);
-    --btn-flexi-active-b: var(--color-gray-900);
+    --btn-flexi-active-bg: var(--color-gray-900);
     --btn-flexi-shadow-a: var(--color-gray-800);
     --btn-flexi-shadow-b: var(--color-gray-900);
     --btn-flexi-shadow-c: var(--color-gray-800);
@@ -476,7 +476,7 @@ CSS,
 @utility btn-flexi-gray {
     --btn-flexi-bg: var(--color-gray-500);
     --btn-flexi-hover-bg: var(--color-gray-600);
-    --btn-flexi-active-b: var(--color-gray-500);
+    --btn-flexi-active-bg: var(--color-gray-500);
     --btn-flexi-shadow-a: var(--color-gray-600);
     --btn-flexi-shadow-b: var(--color-gray-500);
     --btn-flexi-shadow-c: var(--color-gray-600);
@@ -488,7 +488,7 @@ CSS,
 @utility btn-flexi-neutral {
     --btn-flexi-bg: var(--color-white);
     --btn-flexi-hover-bg: var(--color-gray-100);
-    --btn-flexi-active-b: var(--color-gray-50);
+    --btn-flexi-active-bg: var(--color-gray-50);
     --btn-flexi-shadow-a: var(--color-gray-100);
     --btn-flexi-shadow-b: var(--color-gray-200);
     --btn-flexi-shadow-c: var(--color-gray-50);

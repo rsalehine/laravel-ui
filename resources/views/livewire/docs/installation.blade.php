@@ -69,7 +69,7 @@
                 <x-md.paragraph>
                     For more about theming following this <x-docs.link href="/docs/theme">guide</x-docs.link>
                 </x-md.paragraph>
-                <x-docs.callout class="flex flex-col" type="note">
+                <x-docs.callout intent="gray" class="flex flex-col" type="note">
                     <p>
                         Button styles and ui Utilities are very important so you need to add them. These utilities come
                         with different styles (variant & intent) for things like btn-solid-primary ui-soft-danger, etc.

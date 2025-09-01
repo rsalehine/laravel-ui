@@ -11,6 +11,7 @@ export default defineConfig({
                 'resources/css/code-theme.css',
                 'resources/css/docs.css',
                 'resources/js/app.js',
+                'resources/js/flexilla.js',
                 'resources/js/docs.js'
             ],
             refresh: true,
