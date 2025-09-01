@@ -22,5 +22,6 @@
 
 <x-layouts.base :seo="$seo">
     <x-organisms.navbar />
+    {{ $slot }}
     <x-blocks.modal-search />
 </x-layouts.base>

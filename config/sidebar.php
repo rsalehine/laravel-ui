@@ -115,6 +115,13 @@ return [
                 'seoDescription' => 'Implement multiple selection controls with Flexiwind\'s checkbox component.',
             ],
             [
+                'title' => 'Callout',
+                'path' => '/components/callout',
+                'description' => 'Callout for user.',
+                'keywords' => 'callout, user',
+                'seoDescription' => 'Implement callout for user with Flexiwind\'s callout component.',
+            ],
+            [
                 'title' => 'Divider',
                 'path' => '/components/divider',
                 'description' => 'Separator for content.',
