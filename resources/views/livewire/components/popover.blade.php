@@ -19,7 +19,7 @@
             </x-docs.step>
             <x-docs.step>
                 <x-md.h3>Install Dropdown</x-md.h3>
-                <x-docs.callout type="note">
+                <x-docs.callout intent="gray" type="note">
                     This component require JS. By default we're using our own Interactive Component Library
                     <x-docs.link href="https://flexilla-docs.vercel.app/">Flexilla</x-docs.link>. You can install the
                     Alpine Plugin if using Alpine or the vanilla JS version as you need

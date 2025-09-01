@@ -1,17 +1,7 @@
-import AlpineModal from "@flexilla/alpine-modal";
-import AlpineTabs from "@flexilla/alpine-tabs";
-import PluginDropdown from "@flexilla/alpine-dropdown";
-import PluginModal from "@flexilla/alpine-modal";
-
 import copyToClipboardComponent from "./copyToClipboard";
-import PluginAccordion from "@flexilla/alpine-accordion";
-import PluginRangeIndicator from "@flexilla/alpine-range-indicator";
-import PluginAutoResizeArea from "@flexilla/alpine-autoresize-area";
-import PluginOffcanvas from "@flexilla/alpine-offcanvas";
-import PluginPopover from "@flexilla/alpine-popover";
-import PluginTooltip from "@flexilla/alpine-tooltip";
+
 import { docSearch } from "../data/search-db";
-import PluginPinInput from "@flexilla/alpine-pin-input";
+
 
 const initGlobalApp = () => {};
 
@@ -19,17 +9,6 @@ initGlobalApp();
 
 Alpine.data("copyToClipboard", copyToClipboardComponent);
 
-Alpine.plugin(PluginAccordion);
-Alpine.plugin(PluginModal);
-Alpine.plugin(PluginDropdown);
-Alpine.plugin(AlpineModal);
-Alpine.plugin(AlpineTabs);
-Alpine.plugin(PluginRangeIndicator);
-Alpine.plugin(PluginAutoResizeArea);
-Alpine.plugin(PluginOffcanvas);
-Alpine.plugin(PluginPopover);
-Alpine.plugin(PluginTooltip);
-Alpine.plugin(PluginPinInput)
 
 document.addEventListener("alpine:init", () => {
     Alpine.store("theme", {
