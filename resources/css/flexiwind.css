@@ -19,8 +19,6 @@
 @custom-variant fx-slide-y (&[data-ax="y"]);
 
 
-/* data-[slot=icon] */
-
 
 @utility ui-card {
   @apply p-(--card-padding) rounded-(--card-radius)
@@ -282,7 +280,9 @@
   --u-knob-height: var(--knob-height, var(--knob-size));
   --u-knob-bg-checked: var(--knob-bg-checked, var(--knob-bg));
   --u-knob-radius: var(--knob-radius, 9999px);
-  @apply appearance-none cursor-pointer w-(--toggle-width) h-(--toggle-height) relative before:absolute before:w-(--u-knob-width) before:h-(--u-knob-height) before:bg-(--knob-bg) before:rounded-(--u-knob-radius) ease-linear transition-all duration-300 before:left-(--knob-left) before:top-(--knob-top) checked:before:left-(--knob-checked-left) before:ease-linear before:transition-all before:duration-300 disabled:opacity-70 disabled:cursor-not-allowed checked:bg-current checked:before:bg-(--u-knob-bg-checked) ring-transparent ring-offset-transparent focus:ring-(--focus-ring) ring-3 ring-offset-0
+  @apply appearance-none cursor-pointer w-(--toggle-width) h-(--toggle-height) relative before:absolute before:w-(--u-knob-width) before:h-(--u-knob-height) before:bg-(--knob-bg) before:rounded-(--u-knob-radius) ease-linear transition-all duration-300 before:left-(--knob-left) before:top-(--knob-top) checked:before:left-(--knob-checked-left) before:ease-linear before:transition-all before:duration-300 disabled:opacity-70 disabled:cursor-not-allowed checked:bg-current checked:before:bg-(--u-knob-bg-checked) 
+  outline-transparent  focus-visible:outline-(--ui-input-focus-outline) 
+  outline-2 outline-offset-2;
 }
 
 @utility switch-outline {
@@ -292,7 +292,9 @@
   --u-knob-height: var(--knob-height, var(--knob-size));
   --u-knob-bg-checked: var(--knob-bg-checked, var(--knob-bg));
   --u-knob-radius: var(--knob-radius, 9999px);
-  @apply appearance-none [border-style:solid] [border-width:var(--switch-border-width)] cursor-pointer w-(--toggle-width) h-(--toggle-height) relative before:absolute before:w-(--u-knob-width) before:h-(--u-knob-height) before:bg-(--knob-bg) before:rounded-(--u-knob-radius) ease-linear transition-all duration-300 before:left-(--knob-left) before:top-(--knob-top) checked:before:left-(--knob-checked-left) before:ease-linear before:transition-all before:duration-300 disabled:opacity-70 disabled:cursor-not-allowed checked:bg-current checked:before:bg-(--u-knob-bg-checked) ring-transparent ring-offset-transparent focus:ring-(--focus-ring) ring-3 ring-offset-0
+  @apply appearance-none [border-style:solid] [border-width:var(--switch-border-width)] cursor-pointer w-(--toggle-width) h-(--toggle-height) relative before:absolute before:w-(--u-knob-width) before:h-(--u-knob-height) before:bg-(--knob-bg) before:rounded-(--u-knob-radius) ease-linear transition-all duration-300 before:left-(--knob-left) before:top-(--knob-top) checked:before:left-(--knob-checked-left) before:ease-linear before:transition-all before:duration-300 disabled:opacity-70 disabled:cursor-not-allowed checked:bg-current checked:before:bg-(--u-knob-bg-checked) 
+  outline-transparent focus-visible:outline-(--ui-input-focus-outline) 
+  outline-2 outline-offset-2 ;
 }
 
 @utility switch-xs {
