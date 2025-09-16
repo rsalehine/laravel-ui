@@ -6,6 +6,9 @@
     <x-md.paragraph>Add the component</x-md.paragraph>
 
     <x-docs.tabs-installation>
+        <x-slot:cli>
+            <livewire:terminal code="flexi-cli add breadcrumb" />
+        </x-slot:cli>
         <livewire:component-source :data="[
             'resources/views/components/ui/breadcrumb.blade.php',
             'resources/views/components/ui/breadcrumb/item.blade.php',

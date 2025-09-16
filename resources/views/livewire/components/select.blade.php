@@ -4,6 +4,9 @@
 
     <x-md.h2>Installation</x-md.h2>
     <x-docs.tabs-installation>
+        <x-slot:cli>
+            <livewire:terminal code="flexi-cli add select" />
+        </x-slot:cli>
         <x-md.paragraph>
             First you need to copy the code from the source tab.
         </x-md.paragraph>

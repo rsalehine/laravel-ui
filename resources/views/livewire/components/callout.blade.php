@@ -4,6 +4,9 @@
 
     <x-md.h2>Installation</x-md.h2>
     <x-docs.tabs-installation>
+        <x-slot:cli>
+            <livewire:terminal code="flexi-cli add callout" />
+        </x-slot:cli>
         <x-md.paragraph>
             First you need to copy the code from the source tab. Make sure that the <x-docs.inline-code
                 text="alert.blade.php" /> file is in your <strong>resources/views/components/ui/</strong> folder.

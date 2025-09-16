@@ -8,7 +8,9 @@
     <x-md.paragraph>Add the component</x-md.paragraph>
 
     <x-docs.tabs-installation>
-
+        <x-slot:cli>
+            <livewire:terminal code="flexi-cli add tooltip" />
+        </x-slot:cli>
         <x-docs.steps>
             <x-docs.step>
                 <x-md.h3>Create needed files</x-md.h3>
