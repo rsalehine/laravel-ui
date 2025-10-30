@@ -1,1 +1,0 @@
-<x-blocks.code-skeleton />

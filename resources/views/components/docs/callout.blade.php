@@ -6,7 +6,7 @@
 @php
     $typeClasses = [
         'update' => 'ui-subtle-info',
-        'note' => 'ui-subtle-primary',
+        'note' => 'ui-subtle-gray',
         'warning' => 'ui-subtle-warning',
         'important' => 'ui-subtle-danger',
     ];

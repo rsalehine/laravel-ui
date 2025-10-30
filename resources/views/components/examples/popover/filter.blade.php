@@ -2,7 +2,7 @@
     <span aria-hidden="true" class="iconify ph--funnel"></span>
 </x-ui.popover.trigger>
 <x-ui.popover id="demo-1" class="w-72">
-    <span class="text-fg mb-4 border-b border-border pb-3 font-medium">Filtre</span>
+    <span class="text-fg mb-4 border-b border-border pb-3 font-medium">Filter</span>
     <form class="w-full flex flex-col space-y-2.5">
         <div class="space-y-1.5 flex flex-col p-2.5 bg-bg-muted/50 rounded-md">
             <x-ui.radio checked name="event_interval" id="all" label="All events" />

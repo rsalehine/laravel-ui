@@ -55,12 +55,12 @@ new class extends Component {
                 <x-ui.modal.trigger intent="primary" variant="solid" modalId="waitlist-modal" size="md">
                     Join waitlist
                 </x-ui.modal.trigger>
-                <x-ui.button variant="outline" intent="gray">
-                    Learn more
+                <x-ui.button variant="outline" intent="gray" href="/docs/introduction" wire:navigate>
+                    Get Started 
                 </x-ui.button>
             </div>
         </div>
     </section>
 
-    <livewire:waitlist-modal></livewire:waitlist-modal>
+    <livewire:waitlist-modal />
 </main>

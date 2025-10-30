@@ -13,11 +13,11 @@ class="fixed bg-gray-800/40 inset-0 z-30 hidden fx-open:flex lg:hidden"
                     class="p-2 rounded-full flex flex-col relative justify-center items-center group"
                     aria-label="Toggle navbar">
                     <span id="line-1"
-                        class="w-6 h-0.5 rounded-full bg-fg-muted transition-transform duration-300 ease-linear group-aria-expanded:translate-y-1.5 group-aria-expanded:rotate-[40deg] group-aria-expanded:bg-white"></span>
+                        class="w-6 h-0.5 rounded-full bg-fg-muted transition-transform duration-300 ease-linear group-aria-expanded:translate-y-1.5 group-aria-expanded:rotate-[40deg]"></span>
                     <span id="line-2"
-                        class="w-6 origin-center  mt-1 h-0.5 rounded-full bg-fg-muted transition-all duration-300 ease-linear group-aria-expanded:scale-x-0 group-aria-expanded:opacity-0 group-aria-expanded:bg-white"></span>
+                        class="w-6 origin-center  mt-1 h-0.5 rounded-full bg-fg-muted transition-all duration-300 ease-linear group-aria-expanded:scale-x-0 group-aria-expanded:opacity-0"></span>
                     <span id="line-3"
-                        class="w-6 mt-1 h-0.5 rounded-full bg-fg-muted transition-all duration-300 ease-linear group-aria-expanded:-translate-y-1.5 group-aria-expanded:-rotate-[40deg] group-aria-expanded:bg-white"></span>
+                        class="w-6 mt-1 h-0.5 rounded-full bg-fg-muted transition-all duration-300 ease-linear group-aria-expanded:-translate-y-1.5 group-aria-expanded:-rotate-[40deg]"></span>
                 </button>
             </div>
             <a href="/" class="hidden min-[34rem]:flex gap-2 items-center">

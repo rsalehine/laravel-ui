@@ -19,130 +19,108 @@
             'icon' => 'simple-icons--alpinedotjs',
         ],
     ];
-
 @endphp
 
-<x-layouts.doc-page-wrapper :current="$current" :current="$current" :prev-slug="$prevSlug" :next-slug="$nextSlug" :links="[]">
+<x-layouts.doc-page-wrapper :current="$current" :prev-slug="$prevSlug" :next-slug="$nextSlug" :links="[]">
     <x-md.h2>Prerequisites</x-md.h2>
     <x-md.paragraph>
-        Requires the following before installing:
+        Before you begin, make sure you have the following installed on your system:
     </x-md.paragraph>
     <x-docs.links-grid :links="$links" />
 
     <x-md.h2>Installation</x-md.h2>
 
-    <x-docs.steps>
-        <x-docs.step>
-            <x-md.h3>Create new laravel Project</x-md.h3>
+    <x-docs.ui-tabs :values="[
+        ['text' => 'Using flexi-cli', 'value' => 'cli'],
+        ['text' => 'Using a Starter', 'value' => 'starter'],
+        ['text' => 'Manual Installation', 'value' => 'manual'],
+    ]">
+    
+        <x-docs.tab-panel value="cli" active>
+            <x-docs.steps>
+                <x-docs.step>
+                    <x-md.h3>Install flexi-cli</x-md.h3>
+                    <x-md.paragraph>Install the flexi-cli tool globally using composer:</x-md.paragraph>
+                    <livewire:terminal code="composer global require unoforge/flexi-cli" />
+                </x-docs.step>
 
-            <x-md.paragraph>Create a new Laravel Project if you don't have one</x-md.paragraph>
+                <x-docs.step> 
+                    <x-md.h3>Create a new Laravel Project</x-md.h3>
+                    <x-md.paragraph>Run the following command to initialize a new Laravel project:</x-md.paragraph>
+                    <livewire:terminal code="flexi-cli init --new-laravel --tailwindcss" />
+                    <x-md.paragraph>Follow the prompts to complete the setup. This will create a new Laravel project with all necessary dependencies.</x-md.paragraph>
+                    <x-md.paragraph>After the setup is complete, navigate to the project directory:</x-md.paragraph>
+                    <livewire:terminal code="cd project-name" />
+                </x-docs.step>
 
-            <livewire:terminal code="laravel create my-app && cd my-app" />
-            <x-md.paragraph>Normally after creating a new project no matter if you've selected a starter or not,
-                tailwindcss will be installed by default so if not the case go to the next step</x-md.paragraph>
-        </x-docs.step>
-        <x-docs.step>
-            <x-md.h3>Install TailwindCSS</x-md.h3>
-            <x-md.paragraph>Skip this step if tailwindcss is already installed</x-md.paragraph>
+                <x-docs.step>
+                    <x-md.h3>Adding component</x-md.h3>
+                    <x-md.paragraph>Use the following command to add a component:</x-md.paragraph>
+                    <livewire:terminal code="flexi-cli add component" />
+                </x-docs.step>
+            </x-docs.steps>
+        </x-docs.tab-panel>
 
-            <x-md.ol>
-                <x-md.li><strong>Installation</strong></x-md.li>
+        
+        <x-docs.tab-panel value="starter">
+            <x-docs.steps>
+                <x-docs.step>
+                    <x-md.h3>1. Create a new project using a starter kit</x-md.h3>
+                    <x-md.paragraph>Use the following command to create a new project with our starter kit:</x-md.paragraph>
+                    <livewire:terminal code="laravel new project-name --using=unoforge/livewire-starter-kit" />
+                </x-docs.step>
 
-                <x-md.paragraph>Install <x-docs.inline-code text="@tailwindcss/vite" /> and its peer dependencies via
-                    npm.</x-md.paragraph>
+                <x-docs.step>
+                    <x-md.h3>2. Navigate to project directory</x-md.h3>
+                    <livewire:terminal code="cd project-name" />
+                </x-docs.step>
 
-                <livewire:terminal code="npm install tailwindcss @tailwindcss/vite" />
-
-                <x-md.paragraph>For more details Follow the this <x-docs.link
-                        href="https://tailwindcss.com/docs/installation/framework-guides/laravel"> Guide </x-docs.link>
-                </x-md.paragraph>
-
-
-                <x-md.li><strong>Add Flexilla Utilities</strong></x-md.li>
-
-
-                <x-md.paragraph>Once you've TailwindCSS installed, create a CSS file in src (Name it as you
-                    want)</x-md.paragraph>
-
-                <livewire:load-code :name="['app-css-file', 'flexiwind', 'key-frames']" />
-
-                <x-md.paragraph>
-                    For more about theming following this <x-docs.link href="/docs/theme">guide</x-docs.link>
-                </x-md.paragraph>
-                <x-docs.callout intent="gray" class="flex flex-col" type="note">
-                    <p>
-                        Button styles and ui Utilities are very important so you need to add them. These utilities come
-                        with different styles (variant & intent) for things like btn-solid-primary ui-soft-danger, etc.
-                    </p>
-                    <x-md.ul>
-                        <x-md.li>
-                            <x-docs.doc-link href="/docs/theme/buttons">
-                                Buttons
-                            </x-docs.doc-link>
-                        </x-md.li>
-                        <x-md.li>
-                            <x-docs.doc-link href="/docs/theme/utilities">
-                                UI Utitities
-                            </x-docs.doc-link>
-                        </x-md.li>
-                    </x-md.ul>
-                </x-docs.callout>
-
-                <x-md.li><strong>Add FLEXIWIND Support Helpers</strong></x-md.li>
-                <p>
-                    Create a folder named <x-docs.inline-code text="Flexiwind" /> inside <x-docs.inline-code text="app"/> folder, and add these 2 files.
-                </p>
-                <livewire:load-code :name="['button-helper', 'ui-helper']" />
-
-                <x-md.li><strong>Update Vite config</strong></x-md.li>
-                <livewire:load-code :name="['vite-config']" />
+                <x-docs.step>
+                    <x-md.h3>3. Install dependencies</x-md.h3>
+                    <livewire:terminal code="composer install && npm install" />
+                </x-docs.step>
+            </x-docs.steps>
+        </x-docs.tab-panel>
 
 
+        <x-docs.tab-panel value="manual">
+            <x-docs.steps>
+                <x-docs.step>
+                    <x-md.h3>1. Create a new Laravel project</x-md.h3>
+                    <x-md.paragraph>Create a new Laravel project using laravel Installer:</x-md.paragraph>
+                    <x-docs.code-block language="bash">
+                        <livewire:terminal code="laravel new project-name -n" />
+                        <x-md.paragraph>After installation navigate to project directory:</x-md.paragraph>
+                        <livewire:terminal code="cd project-name" />
+                    </x-docs.code-block>
+                </x-docs.step>
 
-                <x-md.li><strong>Import CSS File</strong></x-md.li>
-                <x-md.paragraph>Import the created CSS file in your Layout.</x-md.paragraph>
+                <x-docs.step>
+                    <x-md.h3>2. Install flexi-cli</x-md.h3>
+                    <x-md.paragraph>Install the CLI package:</x-md.paragraph>
+                    <livewire:terminal code="composer require unoforge/flexi-cli --dev" />
+                </x-docs.step>
 
-            </x-md.ol>
-        </x-docs.step>
-        <x-docs.step>
+                <x-docs.step>
+                    <x-md.h3>3. Initialize the CLI</x-md.h3>
+                    <x-md.paragraph>Run the initialization command:</x-md.paragraph>
+                    <livewire:terminal code="php flexi-cli init --tailwind" />
+                    <x-md.paragraph>Follow the prompts to complete the setup. Know more about <x-docs.link href="https://github.com/unoforge/flexi-cli">flexi-cli</x-docs.link></x-md.paragraph>
+                </x-docs.step>
+            </x-docs.steps>
+        </x-docs.tab-panel>
+    </x-docs.ui-tabs>
 
-            <x-md.h3>Add interactivity with Flexilla Plugins</x-md.h3>
-            <x-md.paragraph>
-                If you're willing to use interactive component then make sure to have corresponding plugin from
-                <x-docs.link href="https://flexiwind.vercel.app/docs/">Flexilla</x-docs.link>
-            </x-md.paragraph>
-
-            <livewire:terminal code="npm i @flexilla/alpine-dropdown" />
-
-            <x-md.paragraph>To init all components</x-md.paragraph>
-
-            {{-- <BoxCode title={"script.js"} icon={"js"}>
-                ```ts
-                import {initFlexilla} from "@flexilla/flexilla"
-
-                initFlexilla()
-                ```
-            </BoxCode> --}}
-
-            <x-md.h3>Add interactivity (Without AlpineJS) (Optional)</x-md.h3>
-            <x-md.paragraph>
-                If you're willing to use interactive component then make sure to have
-                <x-docs.link href="https://flexiwind.vercel.app/docs/">Flexilla</x-docs.link> installed or the
-                corresponding Flexilla.
-            </x-md.paragraph>
-
-            <livewire:terminal code="npm i @flexilla/flexilla" />
-
-            <x-md.paragraph>To init all components</x-md.paragraph>
-
-            {{-- <BoxCode title={"script.js"} icon={"js"}>
-                    ```ts
-                    import {initFlexilla} from "@flexilla/flexilla"
-
-                    initFlexilla()
-                    ```
-                </BoxCode> --}}
-
-        </x-docs.step>
-    </x-docs.steps>
+    <x-md.h2>Next Steps</x-md.h2>
+    <x-md.paragraph>
+        After installation, you can start the development server:
+    </x-md.paragraph>
+    <livewire:terminal code="php artisan serve" />
+    <x-md.paragraph>
+        Then visit <x-docs.inline-code text="http://localhost:8000" /> in your browser to see your new application.
+    </x-md.paragraph>
+    <x-md.paragraph>
+        You can now start adding and using our components. Just use the CLI to add components:
+    </x-md.paragraph>
+    <livewire:terminal code="flexi-cli add button" />
 </x-layouts.doc-page-wrapper>

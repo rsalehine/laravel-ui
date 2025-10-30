@@ -8,7 +8,9 @@
     <x-md.paragraph>Add the component</x-md.paragraph>
 
     <x-docs.tabs-installation>
-
+        <x-slot:cli>
+            <livewire:terminal code="flexi-cli add slideover" />
+        </x-slot:cli>
         <x-docs.steps>
             <x-docs.step>
                 <x-md.h3>Create needed files</x-md.h3>
@@ -34,12 +36,12 @@
                 <x-md.ol>
                     <x-md.li><strong>With Alpine</strong></x-md.li>
                     <livewire:terminal :code="'npm i @flexilla/alpine-modal'" />
-                    <x-md.paragraph>Add plugin in <x-docs.inline-code text="app.js"/></x-md.paragraph>
+                    <x-md.paragraph>Add plugin in <x-docs.inline-code text="flexilla.js"/></x-md.paragraph>
 
                     <livewire:load-code :name="['add-modal-plugin-in-app']" />
                     <x-md.li><strong>Without Alpine</strong></x-md.li>
                     <livewire:terminal :code="'npm i @flexilla/modal'" />
-                    <x-md.paragraph>Initialize modal in <x-docs.inline-code text="app.js"/></x-md.paragraph>
+                    <x-md.paragraph>Initialize modal in <x-docs.inline-code text="flexilla.js"/></x-md.paragraph>
 
                     <livewire:load-code :name="['add-modal-in-app']" />
 
