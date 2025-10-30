@@ -4,20 +4,7 @@
 
     <x-md.h2>Installation</x-md.h2>
     <x-md.paragraph>Add the component</x-md.paragraph>
-
-    <x-docs.tabs-installation>
-        <x-slot:cli>
-            <livewire:terminal code="flexi-cli add table" />
-        </x-slot:cli>
-        <livewire:component-source :data="[
-            'resources/views/components/ui/table.blade.php',
-            'resources/views/components/ui/table/columns.blade.php',
-            'resources/views/components/ui/table/column.blade.php',
-            'resources/views/components/ui/table/rows.blade.php',
-            'resources/views/components/ui/table/row.blade.php',
-            'resources/views/components/ui/table/cell.blade.php',
-        ]" />
-    </x-docs.tabs-installation>
+    <livewire:terminal code="flexi-cli add table" />
 
     <x-md.h2>Examples</x-md.h2>
     <x-md.h3>Stripped</x-md.h3>

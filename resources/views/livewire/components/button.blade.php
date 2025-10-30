@@ -3,19 +3,7 @@
     <livewire:component-tab-preview-code no-in-tabs component="components.examples.button.demo" />
 
     <x-md.h2>Installation</x-md.h2>
-    <x-docs.tabs-installation>
-        <x-slot:cli>
-            <livewire:terminal code="flexi-cli add button" />
-        </x-slot:cli>
-        <x-md.paragraph>
-            First you need to copy the code from the source tab.
-        </x-md.paragraph>
-        <x-md.paragraph>
-            Then you need to paste the code in your project's <x-docs.inline-code text="button.blade.php" /> file insise
-            your <strong>resources/views/components/ui/</strong> folder.
-        </x-md.paragraph>
-        <livewire:component-source :data="['resources/views/components/ui/button.blade.php']" />
-    </x-docs.tabs-installation>
+    <livewire:terminal code="flexi-cli add button" />
 
     <x-md.h2>Sizes</x-md.h2>
     <livewire:component-tab-preview-code no-in-tabs component="components.examples.button.sizes" />

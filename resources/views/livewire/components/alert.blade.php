@@ -3,19 +3,7 @@
     <livewire:component-tab-preview-code component="components.examples.alert.default" />
 
     <x-md.h2>Installation</x-md.h2>
-    <x-docs.tabs-installation>
-        <x-slot:cli>
-            <livewire:terminal code="flexi-cli add alert" />
-        </x-slot:cli>
-        <x-md.paragraph>
-            First you need to copy the code from the source tab.
-        </x-md.paragraph>
-        <x-md.paragraph>
-            Then you need to paste the code in your project's <x-docs.inline-code
-                text="alert.blade.php" /> file insise your <strong>resources/views/components/ui/</strong> folder.
-        </x-md.paragraph>
-        <livewire:component-source :data="['resources/views/components/ui/alert.blade.php']" />
-    </x-docs.tabs-installation>
+    <livewire:terminal code="flexi-cli add alert" />
 
 
     <x-md.h2>Examples</x-md.h2>

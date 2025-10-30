@@ -52,12 +52,10 @@
                     "path": "resources/views/components/ui/alert.blade.php",
                     "type": "registry:component",
                     "target": "resources/views/components/ui/alert.blade.php"
-                },
-                {
-                    "path": "app/Flexiwind/UiHelper.php",
-                    "type": "registry:utils",
-                    "target": "app/Flexiwind/UiHelper.php"
                 }
+            ],
+            "registryDependencies": [
+                "ui-helper"
             ]
         },
         {
@@ -145,12 +143,10 @@
                     "path": "resources/views/components/ui/button.blade.php",
                     "type": "registry:component",
                     "target": "resources/views/components/ui/button.blade.php"
-                },
-                {
-                    "path": "app/Flexiwind/UiHelper.php",
-                    "type": "registry:utils",
-                    "target": "app/Flexiwind/UiHelper.php"
                 }
+            ],
+            "registryDependencies": [
+                "button-helper"
             ]
         },
         {
@@ -163,15 +159,11 @@
                     "path": "resources/views/components/ui/callout.blade.php",
                     "type": "registry:component",
                     "target": "resources/views/components/ui/callout.blade.php"
-                },
-                {
-                    "path": "app/Flexiwind/UiHelper.php",
-                    "type": "registry:utils",
-                    "target": "app/Flexiwind/UiHelper.php"
                 }
             ],
             "registryDependencies": [
-                "alert"
+                "alert",
+                "ui-helper"
             ]
         },
         {
@@ -209,12 +201,10 @@
                     "path": "resources/views/components/ui/card/title.blade.php",
                     "type": "registry:component",
                     "target": "resources/views/components/ui/card/title.blade.php"
-                },
-                {
-                    "path": "app/Flexiwind/UiHelper.php",
-                    "type": "registry:utils",
-                    "target": "app/Flexiwind/UiHelper.php"
                 }
+            ],
+            "registryDependencies": [
+                "ui-helper"
             ]
         },
         {
@@ -767,6 +757,32 @@
                     "@flexilla/alpine-tooltip"
                 ]
             }
+        },
+        {
+            "version": "1.0.0",
+            "name": "button-helper",
+            "title": "Button helper",
+            "description": "A reusable accordion component for Laravel Blade/Livewire.",
+            "files": [
+                {
+                    "path": "app/Flexiwind/ButtonHelper.php",
+                    "type": "registry:helper",
+                    "target": "app/Flexiwind/ButtonHelper.php"
+                }
+            ]
+        },
+        {
+            "version": "1.0.0",
+            "name": "ui-helper",
+            "title": "Ui helper",
+            "description": "A reusable accordion component for Laravel Blade/Livewire.",
+            "files": [
+                {
+                    "path": "app/Flexiwind/UiHelper.php",
+                    "type": "registry:helper",
+                    "target": "app/Flexiwind/UiHelper.php"
+                }
+            ]
         }
     ]
 }

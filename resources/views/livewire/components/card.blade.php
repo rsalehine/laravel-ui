@@ -4,20 +4,7 @@
 
     <x-md.h2>Installation</x-md.h2>
     <x-md.paragraph>Add the component</x-md.paragraph>
-
-    <x-docs.tabs-installation>
-        <x-slot:cli>
-            <livewire:terminal code="flexi-cli add card" />
-        </x-slot:cli>
-        <livewire:component-source :data="[
-            'resources/views/components/ui/card.blade.php',
-            'resources/views/components/ui/card/header.blade.php',
-            'resources/views/components/ui/card/content.blade.php',
-            'resources/views/components/ui/card/footer.blade.php',
-            'resources/views/components/ui/card/title.blade.php',
-            'resources/views/components/ui/card/description.blade.php',
-        ]" />
-    </x-docs.tabs-installation>
+    <livewire:terminal code="flexi-cli add card" />
 
     <x-md.h2>Examples</x-md.h2>
     <x-md.h3>With Icon</x-md.h3>

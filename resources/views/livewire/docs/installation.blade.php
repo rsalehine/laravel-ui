@@ -67,7 +67,7 @@
                 <x-docs.step>
                     <x-md.h3>1. Create a new project using a starter kit</x-md.h3>
                     <x-md.paragraph>Use the following command to create a new project with our starter kit:</x-md.paragraph>
-                    <livewire:terminal code="laravel new project-name --github=unoforge/livewire-tailwind-starter-kit" />
+                    <livewire:terminal code="laravel new project-name --using=unoforge/livewire-starter-kit" />
                 </x-docs.step>
 
                 <x-docs.step>
